@@ -7,10 +7,21 @@ public class Osero {
     //   初期盤面は真ん中に黒と白の駒を置いた状態
     public void board_display() {
 	String[][] board = new String[8][8];
-	// ８マスを8行表示させる
+	// ８マスを8行作る
 	for (int y = 0; y < 8; y++) {
 	    for (int x = 0; x < 8; x++) { // 一行目に8個マスを作る
 		board[x][y] = "□";
+	    }
+	}
+
+	// 初期盤面を作る
+	board[3][3] = "○";
+	board[4][3] = "●";
+	board[3][4] = "●";
+	board[4][4] = "○";
+
+	for (int y = 0; y < 8; y++) {
+	    for (int x = 0; x < 8; x++) {
 		System.out.print(board[x][y]);
 	    }
 	    System.out.println();
