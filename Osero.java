@@ -1,4 +1,10 @@
 // オセロ
 public class Osero {
-    System.out.println("Hello");
+    // 盤面の表示
+
+    // 駒を置く
+
+    // 駒をひっくり返す
+
+    // 駒が置けるかどうか判定する
 }
