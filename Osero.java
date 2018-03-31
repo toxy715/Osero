@@ -6,11 +6,16 @@ public class Osero {
     // ・ゲームの初期盤面をつくる
     //   初期盤面は真ん中に黒と白の駒を置いた状態
     public void board_display() {
-	String[] board = new String[8];
-	for (int x = 0; x < 8; x++) { // 一行目に8個マスを作る
-	    board[x] = "□";
-	    System.out.print(board[x]);
+	String[][] board = new String[8][8];
+	// ８マスを8行表示させる
+	for (int y = 0; y < 8; y++) {
+	    for (int x = 0; x < 8; x++) { // 一行目に8個マスを作る
+		board[x][y] = "□";
+		System.out.print(board[x][y]);
+	    }
+	    System.out.println();
 	}
+	
     }
     
     
