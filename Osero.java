@@ -1,8 +1,5 @@
 // オセロ
 public class Osero {
-<<<<<<< Updated upstream
-    System.out.println("Hello");
-=======
     // 盤面の表示
     // ・１行目に, ８こマスを表示させる
     // ・８マスを8行表示させる
@@ -14,5 +11,4 @@ public class Osero {
     // 駒をひっくり返す
 
     // 駒が置けるかどうか判定する
->>>>>>> Stashed changes
 }
