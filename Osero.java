@@ -19,7 +19,7 @@ public class Osero {
 	board[4][3] = "●";
 	board[3][4] = "●";
 	board[4][4] = "○";
-
+	System.out.println("黒(●)が先手です。");
 	for (int y = 0; y < 8; y++) {
 	    for (int x = 0; x < 8; x++) {
 		System.out.print(board[x][y]);
