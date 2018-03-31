@@ -5,6 +5,14 @@ public class Osero {
     // ・８マスを8行表示させる
     // ・ゲームの初期盤面をつくる
     //   初期盤面は真ん中に黒と白の駒を置いた状態
+    public void board_display() {
+	String[] board = new String[8];
+	for (int x = 0; x < 8; x++) { // 一行目に8個マスを作る
+	    board[x] = "□";
+	    System.out.print(board[x]);
+	}
+    }
+    
     
     // 駒を置く
     // ・駒が置けるかどうか判定する
@@ -39,4 +47,12 @@ public class Osero {
     //  → ・黒の勝利です。と表示する
     // ・白が多かったら白の勝利
     //  → ・白の勝利です。と表示する
+
+    public static void main(String[] args) {
+	Osero game = new Osero();
+
+	game.board_display();
+    }
 }
+
+
